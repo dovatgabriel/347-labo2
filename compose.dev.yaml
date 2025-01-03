@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      target: development
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - VITE_WIDGET_TITLE=Météo (dev)
+    command: npm run start

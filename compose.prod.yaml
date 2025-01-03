@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      target: production
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - VITE_WIDGET_TITLE=Météo
+    command: npm run start:prod
